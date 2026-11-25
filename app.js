@@ -18,6 +18,9 @@
   $$('.ph button').forEach(function (b) { function on() { $$('.ph button').forEach(function (q) { q.classList.toggle('on', q === b); }); cal.classList.add('dim'); days.forEach(function (x) { x.classList.toggle('hi', x.dataset.p === b.dataset.ph); }); } b.addEventListener('pointerenter', on); b.addEventListener('focus', on); b.addEventListener('click', on); });
   $('.ph').addEventListener('pointerleave', function () { cal.classList.remove('dim'); days.forEach(function (x) { x.classList.remove('hi'); }); $$('.ph button').forEach(function (q) { q.classList.remove('on'); }); });
 
+  /* ---- что входит в цену ---- */
+  var info = $('.info'); if (info) { $$('li', info).forEach(function (x, i) { x.style.setProperty('--n', i); }); K.onView(info, function (v) { if (v) info.classList.add('in'); }, { threshold: .2 }); }
+
   /* ---- письмо ---- */
   $('#f').addEventListener('submit', function (e) { e.preventDefault(); var t = [], n = ''; new FormData(e.target).forEach(function (v, k) { if (String(v).trim()) t.push(k + ': ' + v); if (k === 'Компания') n = v; }); $('.hint').textContent = 'Открываем почту. Если не открылась, напишите на severmerch89@yandex.ru'; location.href = 'mailto:severmerch89@yandex.ru?subject=' + encodeURIComponent('Сайт для ' + n) + '&body=' + encodeURIComponent(t.join('\n')); });
 })();
