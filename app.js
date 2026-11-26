@@ -22,5 +22,5 @@
   var info = $('.info'); if (info) { $$('li', info).forEach(function (x, i) { x.style.setProperty('--n', i); }); K.onView(info, function (v) { if (v) info.classList.add('in'); }, { threshold: .2 }); }
 
   /* ---- письмо ---- */
-  $('#f').addEventListener('submit', function (e) { e.preventDefault(); var t = [], n = ''; new FormData(e.target).forEach(function (v, k) { if (String(v).trim()) t.push(k + ': ' + v); if (k === 'Компания') n = v; }); $('.hint').textContent = 'Открываем почту. Если не открылась, напишите на severmerch89@yandex.ru'; location.href = 'mailto:severmerch89@yandex.ru?subject=' + encodeURIComponent('Сайт для ' + n) + '&body=' + encodeURIComponent(t.join('\n')); });
+  $('#f').addEventListener('submit', function (e) { e.preventDefault(); var t = [], n = ''; new FormData(e.target).forEach(function (v, k) { if (String(v).trim()) t.push(k + ': ' + v); if (k === 'Компания') n = v; }); $('.hint').textContent = 'Открываем почту. Если не открылась, напишите на artsevershop@gmail.com'; location.href = 'mailto:artsevershop@gmail.com?subject=' + encodeURIComponent('Сайт для ' + n) + '&body=' + encodeURIComponent(t.join('\n')); });
 })();
