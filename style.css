@@ -85,7 +85,7 @@ h1{font-size:clamp(50px,min(7.4vw,15.4svh),124px);line-height:.94;transform:none
 /* цена */
 .price{background:var(--red);color:#fff;--fg:#fff;--muted:#FFD9DB;clip-path:polygon(0 5vw,100% 0,100% 100%,0 100%);padding-block:clamp(110px,13vw,210px);margin-top:-5vw;position:relative}
 .price-g{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(30px,6vw,110px);align-items:center}
-.sum{font:700 clamp(64px,10.6vw,184px)/.95 var(--f-display);letter-spacing:-.03em;transform:skewX(var(--sk));transform-origin:0 100%;margin-top:18px}.nds{margin-top:14px;font-size:19px;color:#FFE3E4}.promo{display:inline-block;margin-top:22px;padding:10px 20px;background:#fff;color:var(--red);font:700 clamp(17px,1.5vw,22px)/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.02em;transform:skewX(var(--sk))}
+.sum{font:700 clamp(64px,10.6vw,184px)/.95 var(--f-display);letter-spacing:-.03em;transform:skewX(var(--sk));transform-origin:0 100%;margin-top:18px}.promo{display:inline-block;margin-top:22px;padding:10px 20px;background:#fff;color:var(--red);font:700 clamp(17px,1.5vw,22px)/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.02em;transform:skewX(var(--sk))}
 .info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .info li{position:relative;display:grid;align-content:start;gap:6px;padding:18px 16px 16px;background:rgba(255,255,255,.1);border-top:3px solid #fff;min-width:0}
 .info svg{width:30px;height:30px;fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:4px}
